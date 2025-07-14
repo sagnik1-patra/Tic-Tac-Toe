@@ -23,11 +23,11 @@ function handleCellClick(e) {
   cell.textContent = currentPlayer;
 
   if (checkWin()) {
-    statusText.textContent = `Player ${currentPlayer} Wins! 🎉`;
+    statusText.textContent = `Player ${currentPlayer} Wins! ;
     gameActive = false;
     highlightWinningCells(checkWin());
   } else if (boardState.every(cell => cell !== "")) {
-    statusText.textContent = "It's a Draw! 🤝";
+    statusText.textContent = "It's a Draw! ";
     gameActive = false;
   } else {
     currentPlayer = currentPlayer === "X" ? "O" : "X";
